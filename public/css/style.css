@@ -1,0 +1,297 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption');
+@import url('https://fonts.googleapis.com/css?family=Asap');
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+@import url('https://fonts.googleapis.com/css?family=Rhodium+Libre');
+
+
+body, p, h1, h2, ul, li, p, dd, dt, dl {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body {
+    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  /* GRID GERAL */
+  .container-grid {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 2fr 1fr;
+    grid-template-areas: 
+        "header header contato"
+        "content content content"
+        "footer footer footer"
+  }
+
+  .header {
+    grid-area: header;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin-left: 20%;
+
+  }
+
+  @media(max-width: 760px) {
+    .header {
+      grid-template-columns: auto;
+    }
+    .logo {
+      margin-bottom: 20px;
+    }
+    .header nav a  {
+      font-size: 1em;
+    }
+    .header li + li {
+      margin-left: 10px
+    }
+  }
+
+.logo { 
+  max-width: 200px;
+}
+
+.logo img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.asterisk {
+  display: flex;
+  align-content: center;
+  height: 35px;
+  width: 70px;
+  color: #505051;
+}
+
+.header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 1.125em;
+  color: #30506B;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.header nav a:hover {
+  color: rgba(81, 160, 195)
+}
+
+.contato {
+  grid-area: contato;
+  display: grid;
+  grid-template-columns:  auto;
+  align-items: center;
+  margin-left: -10px;
+ 
+}
+
+.contato a {
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-size: 1.125em;
+  background: #30506B; 
+  margin-top: -20px;
+  font-weight: 900;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.contato a:hover {
+  text-decoration: none;
+  color:  rgba(81, 160, 195);
+ }
+
+  .content {
+    grid-area: content;
+  }
+
+  .dots {  
+    margin: 20%;
+    max-width: 350px;
+    padding: 20px;   
+  }
+ 
+
+ .quem-somos { 
+   font-size: 1.35em;
+   max-width: 900px;
+   align-items: center;
+   align-content: center;
+ }
+
+  .sobre {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;  
+    background: #30506B;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-weight: 500;
+  }
+
+  .sobre h1 {
+    font-size: 1.42em;
+    padding: 30px;
+  }
+  .sobre p {
+    padding: 0 30px;
+  }
+
+  .doutora {
+    font-family: 'Arvo', serif;
+    color: #505051;
+    background: #51A0C3;
+    margin: 0 auto; 
+} 
+.straumann {
+  background: #30506B;
+  color: white;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  align-items: center;    
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-weight: 500;
+}
+
+.section-protocolo {  
+  display: grid;
+  align-items: center;
+  background: #3c3c3c;
+  color: #51A0C3;
+}
+.texto-straumann {
+  max-width: 980px;
+  margin: 50px auto;
+  padding: 60px;
+}
+
+.dots-straumann {  
+  margin: 10%;
+  max-width: 350px;
+  padding: 10px;   
+}
+
+.section-protocolo h1 {
+  margin: 0 auto;
+  padding: 60px;
+
+}
+
+.protocolo { 
+  margin: 0 auto;
+  max-width: 1280px;
+  /* padding: 60px 0 60px 0;  */
+}
+
+.lentes {
+  font-family: 'Arvo', serif;
+  color: #51A0C3;
+  background: #505051;
+  margin: 0 auto; 
+} 
+
+.especialidades {
+  align-items: center;
+  color: #30506B;
+}
+.especialidades img {
+  margin-left: 30%;
+}
+
+.especialidades-implante {
+  margin-left: 15%;
+}
+
+.especialidades-orto {
+  margin-bottom: 5px;
+  padding-right: 10px; 
+  align-content: center;
+}
+
+.especialidades-orto {
+  margin-right: 25%;
+}
+
+.especialidades-orto > img {
+  max-width: 110%;
+}
+
+ 
+
+ .doutora {
+   padding: 200px;
+ }
+
+.curriculo {
+  padding: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.profissionais h1 {
+  font-size: 1.42em;
+  color: white;
+}
+
+.fas {
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.footer {
+  grid-area: footer;
+  background: #30506B;
+  color: #51A0C3;
+}
+
+.sub-footer {
+  background: #51A0C3;
+  color: #30506B;
+}
+
+.pl-3 {
+  max-height: 100%;
+}
+
+.dra-skil {
+  display: flex;
+  align-items: center;
+  background-color: #51A0C3;
+}
+
+.dra {
+  align-items: center;
+}
+  
