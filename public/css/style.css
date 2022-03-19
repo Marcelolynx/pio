@@ -273,12 +273,20 @@ body, p, h1, h2, ul, li, p, dd, dt, dl {
 .footer {
   grid-area: footer;
   background: #30506B;
-  color: #51A0C3;
+  color: white;
+}
+
+.footer h4 ul li a {
+  color: white;
 }
 
 .sub-footer {
   background: #51A0C3;
-  color: #30506B;
+  color: white;
+}
+
+.sub-footer p {
+  color: white;
 }
 
 .pl-3 {
